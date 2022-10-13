@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja la Sagrada Familia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <img class="logo" src="img/logo_cabecera.png" alt="logo" />
+    </div>
+    <div class="ancho contenedor">
+      <h1>DÉJANOS CONOCERTE</h1>
+      <hr class="separador" />
+      <br />
+      <div class="formulario">
+        <h2 class="compartenos">¡ Compártenos tu información !</h2>
+        <br />
+        <h3 class="dejanos">
+          Dejanos tus datos personales y nosotros nos comunicaremos contigo lo
+          más pronto posible.
+        </h3>
+        <br />
+        <form
+          name="formulario"
+          action="enviar.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="der">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre Completo*"
+            />
+            <br />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Correo Electronico*"
+            />
+            <input type="text" name="phone" id="phone" placeholder="Celular*" />
+            <input type="text" name="city" id="city" placeholder="Ciudad" />
+            <input
+              type="text"
+              name="localidad"
+              id="localidad"
+              placeholder="Localidad"
+            />
+          </div>
+          <div class="izq">
+            <input type="text" name="estado" id="estado" placeholder="Estado" />
+            <br />
+            <input
+              type="text"
+              name="colonia"
+              id="colonia"
+              placeholder="Colonia"
+            />
+            <select name="area" id="area">
+              <option value="">Elige tu área de interés</option>
+              <option value="cajas">Cajas</option>
+              <option value="servicios">Servicios</option>
+              <option value="asesoria">Asesoramiento Financiero</option>
+              <option value="gestoria">Gestoría y Cobranza</option>
+              <option value="credito">Crédito</option>
+              <option value="juridico">Jurídico</option>
+              <option value="archivo">Archivo</option>
+              <option value="merca">Mercadotecnia</option>
+              <option value="diligencias">Diligencias</option>
+              <option value="compras">Compras</option>
+              <option value="intendencia">Intendencia</option>
+              <option value="auditoria">Auditoría</option>
+              <option value="humano">Capital Humano</option>
+              <option value="mantenimiento">Mantenimiento</option>
+              <option value="sistemas">Sistemas</option>
+              <option value="contabilidad">Contabilidad</option>
+              <option value="admin">Administración</option>
+            </select>
+            <h2 class="curriculum">
+              Sube tu Curriculum en formato PDF
+              <span class="tamano">(no exceder de 5 MB)</span>
+              <img class="pdf" src="img/icono_pdf.png" alt="" />
+            </h2>
+            <input type="file" name="cv" id="cv" />
+            <br />
+            <input
+              class="btn_enviar"
+              type="button"
+              value="Enviar"
+              onclick="enviar()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Yael Iván Mota Herrera</h2>
+      <h2>7SB</h2>
+      <h2>Programación Web</h2>
+    </div>
+
+    <script>
+      function enviar () {
+        if (document.getElementById('nombre').value.length == 0) {
+          alert('Por favor ingresa tu Nombre Completo')
+          document.getElementById('nombre').focus()
+          return 0
+        }
+        if (document.getElementById('email').value.length == 0) {
+          alert('Por favor ingresa tu Correo Electronico')
+          document.getElementById('email').focus()
+          return 0
+        }
+        if (document.getElementById('phone').value.length == 0) {
+          alert('Por favor ingresa tu Celular')
+          document.getElementById('phone').focus()
+          return 0
+        }
+        document.formulario.submit()
+      }
+    </script>
+  </body>
+</html>

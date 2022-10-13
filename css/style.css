@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+  }
+  .ancho {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .nav {
+    text-align: center;
+    background-color: #041237;
+    padding: 25px;
+    border-top: 20px #EA970D solid;
+  }
+  .logo {
+    margin: auto;
+  }
+  .contenedor {
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    color: #006F95;
+    font-size: 30px;
+  }
+  .separador {
+    width: 70px;
+    height: 5px;
+    background-color: red;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+  }
+  .formulario {
+    border: 2px #428DAD solid;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .compartenos {
+    color: #EB9701;
+    margin-bottom: 10px;
+  }
+  .der {
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .izq {
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  input, select {
+    width: 520px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 5px;
+    border: 1px #c9c8c8 solid;
+  }
+  .curriculum {
+    color: #428DAD;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .tamano {
+    font-size: 12px;
+  }
+  .pdf {
+    width: 20px;
+    vertical-align: middle;
+  }
+  .btn_enviar {
+    background-color: #BF1111;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+  .dejanos {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .footer {
+    text-align: center;
+    background-color: #041237;
+    padding: 25px;
+    color: white;
+    line-height: 35px;
+  }
